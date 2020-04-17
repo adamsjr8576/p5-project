@@ -1,4 +1,4 @@
-export default function sketch1(p) {
+ const sketch1 = p => {
   p.setup = () => {
     let canvas = p.createCanvas(640, 480);
     canvas.position(400, 50);
@@ -20,3 +20,5 @@ export default function sketch1(p) {
     //     p.fill(newProps.color);
     }
 }
+
+export default sketch1;
