@@ -13,7 +13,7 @@ const sketch2 = p => {
     p.strokeWeight(5);
     p.stroke(strokeValue);
     p.fill(backgroundValue);
-    p.strokeJoin(ROUND);
+    p.strokeJoin(p.ROUND);
     p.smooth();
 
     let triWidth = p.width/2;

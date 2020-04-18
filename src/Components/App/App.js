@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import P5Wrapper from 'react-p5-wrapper';
 import Sketch1 from '../Sketch1/Sketch1.js';
+import Sketch2 from '../Sketch2/Sketch2.js';
 import sketch6 from '../../sketches/sketch6';
 
 const App = () => {
@@ -13,6 +14,7 @@ const App = () => {
       <P5Wrapper sketch={sketch6}></P5Wrapper>
       <main className="sketch-main">
         <Sketch1 />
+        <Sketch2 />
       </main>
     </div>
   );

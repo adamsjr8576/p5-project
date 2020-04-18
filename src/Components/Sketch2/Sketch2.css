@@ -1,14 +1,8 @@
-.sketch1-section {
+.sketch2-section {
   width: 100%;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   border-bottom: 3px solid black;
-}
-
-.p5Canvas {
-  position: relative!important;
-  left: 0px!important;
-  top: 0px!important;
 }

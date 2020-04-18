@@ -126,7 +126,7 @@ const sketch6 = p => {
       p.stroke('rgba(250, 0, 0, 0.5)')
       p.translate(xCenter, yCenter);
       p.rotate(-animation2);
-      p.circle(0, 185, 50, 50);
+      p.circle(0, 185, 50);
     p.pop();
 
     p.push();
@@ -134,7 +134,7 @@ const sketch6 = p => {
       p.stroke('rgba(250, 0, 0, 0.5)')
       p.translate(xCenter, yCenter);
       p.rotate(animation2);
-      p.circle(0, 185, 50, 50);
+      p.circle(0, 185, 50);
     p.pop();
 
     p.push();
@@ -142,7 +142,7 @@ const sketch6 = p => {
       p.stroke('rgba(250, 0, 0, 0.5)')
       p.translate(xCenter, yCenter);
       p.rotate(-animation2);
-      p.circle(0, -185, 50, 50);
+      p.circle(0, -185, 50);
     p.pop();
 
     p.push();
@@ -150,7 +150,7 @@ const sketch6 = p => {
       p.stroke('rgba(250, 0, 0, 0.5)')
       p.translate(xCenter, yCenter);
       p.rotate(animation2);
-      p.circle(0, -185, 50, 50);
+      p.circle(0, -185, 50);
     p.pop();
 
     p.push();
