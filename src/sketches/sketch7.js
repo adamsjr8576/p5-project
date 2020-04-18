@@ -1,10 +1,10 @@
 const sketch7 = p => {
   p.setup = () => {
-    createCanvas(windowWidth, windowHeight);
+    p.createCanvas(p.windowWidth/1.2, p.windowHeight/1.2);
   }
 
   p.windowResized = () => {
-    resizeCanvas(windowWidth, windowHeight);
+    p.resizeCanvas(p.windowWidth/1.2, p.windowHeight/1.2);
   }
 
   p.draw = () => {
@@ -13,7 +13,7 @@ const sketch7 = p => {
     const xCenter = p.width/2;
     const yCenter = p.height/2;
 
-    p.strokeJoin(ROUND);
+    p.strokeJoin(p.ROUND);
     p.strokeWeight(5);
     p.stroke(230);
     p.noFill();
@@ -22,27 +22,27 @@ const sketch7 = p => {
 
     const duration = 20;
     const playhead = seconds/duration % 1;
-    const animation = playhead * PI * 2;
+    const animation = playhead * p.PI * 2;
 
     const duration2 = 10;
     const playhead2 = seconds/duration2 % 1;
 
 
-    let movement = (p.sin(playhead*PI*2)) * 0.5 + 0.5;
-    let movement2 = (p.sin(playhead2*PI*2)) * 0.5 + 0.5;
+    let movement = (p.sin(playhead*p.PI*2)) * 0.5 + 0.5;
+    let movement2 = (p.sin(playhead2*p.PI*2)) * 0.5 + 0.5;
 
     const startX = [xCenter/4, yCenter];
-    const endX = [(width - xCenter/4), yCenter];
+    const endX = [(p.width - xCenter/4), yCenter];
     const x = p.lerp(startX[0], endX[0], movement);
     const y = p.lerp(startX[1], endX[1], movement);
 
-    const startY = [xCenter, yCenter/1.5];
-    const endY = [xCenter, (height - yCenter/1.5)];
+    const startY = [xCenter, yCenter/1.3];
+    const endY = [xCenter, (p.height - yCenter/1.3)];
     const x2 = p.lerp(startY[0], endY[0], movement);
     const y2 = p.lerp(startY[1], endY[1], movement);
 
     const startXY = [200, 200];
-    const endXY = [(width - 200), (height - 200)];
+    const endXY = [(p.width - 200), (p.height - 200)];
     const x3 = p.lerp(startXY[0], endXY[0], movement);
     const y3 = p.lerp(startXY[1], endXY[1], movement);
 

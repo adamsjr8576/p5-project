@@ -1,7 +1,15 @@
  const sketch1 = p => {
+  // p.setup = () => {
+  //   let canvas = p.createCanvas(640, 480);
+  //   canvas.position(400, 50);
+  // }
+
   p.setup = () => {
-    let canvas = p.createCanvas(640, 480);
-    canvas.position(400, 50);
+    p.createCanvas(p.windowWidth/1.3, p.windowHeight/1.3);
+  }
+
+  p.windowResized = () => {
+    p.resizeCanvas(p.windowWidth, p.windowHeight);
   }
 
   p.draw = () => {

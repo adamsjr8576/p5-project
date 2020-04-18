@@ -1,8 +1,7 @@
 const sketch2 = p => {
 
   p.setup = () => {
-    let canvas = p.createCanvas(640, 480);
-    canvas.position(400, 50);
+    let canvas = p.createCanvas(733, 550);
   }
 
   let backgroundValue = 210;

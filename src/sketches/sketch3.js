@@ -1,18 +1,18 @@
 const sketch3 = p => {
   p.setup = () => {
-    p.createCanvas(windowWidth, windowHeight);
+    p.createCanvas(p.windowWidth/1.2, p.windowHeight/1.2);
     p.noLoop();
   }
 
   p.windowResized = () => {
-    p.resizeCanvas(windowWidth, windowHeight);
+    p.resizeCanvas(p.windowWidth/1.2, p.windowHeight/1.2);
   }
 
   let backgroundValue = 50;
   let fillValue = 200;
 
   p.draw = () => {
-    p.blendMode(DIFFERENCE);
+    p.blendMode(p.DIFFERENCE);
     p.background(backgroundValue);
     p.fill(0, 0 ,fillValue);
     p.noStroke();
@@ -20,8 +20,8 @@ const sketch3 = p => {
     let xCenter = p.width/2;
     let yCenter = p.height/2;
 
-    const size = p.min(width, height) * 0.5;
-    p.rectMode(CENTER);
+    const size = p.min(p.width, p.height) * 0.5;
+    p.rectMode(p.CENTER);
     p.rect(xCenter, yCenter, size, size);
 
     p.push()
@@ -70,10 +70,10 @@ const sketch3 = p => {
     p.push()
       p.stroke(0, 0, fillValue);
       p.strokeWeight(5);
-      p.line(xCenter - (size+5), yCenter, xCenter + size/2, height);
-      p.line(xCenter + (size+5), yCenter, xCenter - size/2, height);
-      p.line(xCenter - (size+200), yCenter, xCenter - size/2, height);
-      p.line(xCenter + (size+200), yCenter, xCenter + size/2, height);
+      p.line(xCenter - (size+5), yCenter, xCenter + size/2, p.height);
+      p.line(xCenter + (size+5), yCenter, xCenter - size/2, p.height);
+      p.line(xCenter - (size+200), yCenter, xCenter - size/2, p.height);
+      p.line(xCenter + (size+200), yCenter, xCenter + size/2, p.height);
     p.pop()
   }
 
