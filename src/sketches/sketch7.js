@@ -118,8 +118,6 @@ const sketch7 = p => {
   }
 
   p.myCustomRedrawAccordingToNewPropsHandler = (newProps) => {
-    //   if(canvas) //Make sure the canvas has been created
-    //     p.fill(newProps.color);
     }
 }
 

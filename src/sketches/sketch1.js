@@ -1,11 +1,6 @@
  const sketch1 = p => {
-  // p.setup = () => {
-  //   let canvas = p.createCanvas(640, 480);
-  //   canvas.position(400, 50);
-  // }
-
   p.setup = () => {
-    p.createCanvas(p.windowWidth/1.3, p.windowHeight/1.3);
+    p.createCanvas(p.windowWidth, p.windowHeight);
   }
 
   p.windowResized = () => {
@@ -24,8 +19,6 @@
   }
 
   p.myCustomRedrawAccordingToNewPropsHandler = (newProps) => {
-    //   if(canvas) //Make sure the canvas has been created
-    //     p.fill(newProps.color);
     }
 }
 
